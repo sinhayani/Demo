@@ -1,13 +1,69 @@
-body {
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.ts-container {
+  width: 800px;
+  max-width: calc(100% - 30px);
+  margin: 80px auto 0;
+}
+.ts-container .fixed-ctas-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+.ts-container .fixed-ctas-wrapper .fixed-cta {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333%;
+          flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 8px;
+}
+.ts-container .fixed-ctas-wrapper .fixed-cta button {
+  border: 1px solid #444;
+  background-color: #126088;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.ts-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.ts-container table .head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 49px;
+  font-size: 15px;
+  -webkit-box-shadow: 0 2px 4px #ddd;
+          box-shadow: 0 2px 4px #ddd;
+  background-color: #f5f5f5;
+}
+.ts-container table td, .ts-container table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 33.3333%;
+  max-width: 33.3333%;
+}
+.ts-container table input {
+  height: 34px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #777;
+  border-radius: 4px;
 }
